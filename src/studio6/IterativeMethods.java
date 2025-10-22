@@ -19,6 +19,7 @@ public class IterativeMethods {
 		}
 		return sum;
 	}
+	// 1/n^2
 
 	/**
 	 * @param p first operand

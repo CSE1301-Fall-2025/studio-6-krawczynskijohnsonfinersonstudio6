@@ -34,8 +34,17 @@ public class RecursiveMethods {
 	 * @param radiusMinimumDrawingThreshold radius above which drawing should occur
 	 */
 	public static void circlesUponCircles(double xCenter, double yCenter, double radius, double radiusMinimumDrawingThreshold) {
-		
-		// FIXME complete the recursive drawing
+		for (int round = 1; round < 6; round++) {
+			if (round == 1) {
+				StdDraw.circle(xCenter, yCenter, radiusMinimumDrawingThreshold);
+			} else {
+				StdDraw.circle(xCenter, yCenter, radiusMinimumDrawingThreshold);
+				StdDraw.circle(xCenter, yCenter/2, radiusMinimumDrawingThreshold);
+				StdDraw.circle(xCenter, yCenter*0.75, radiusMinimumDrawingThreshold);
+				StdDraw.circle(xCenter/2, yCenter, radiusMinimumDrawingThreshold);
+				StdDraw.circle(xCenter*.75, yCenter, radiusMinimumDrawingThreshold);
+			}
+		}
 	}
 	
 
